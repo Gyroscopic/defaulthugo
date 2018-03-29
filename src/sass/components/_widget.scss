@@ -1,0 +1,29 @@
+.widget {
+    margin-bottom: $m-sm;
+    font-size: $sidebar-font-size;
+
+    &__menu {
+        list-style: none;
+        padding-left: 0;
+
+        & > li {
+            padding: 3px 0;
+            border-bottom: 2px solid rgba(#000000, .075);
+
+            & > a {
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+
+            &:first-child {
+                padding-top: 0;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                border-bottom: none;
+            }
+        }
+    }
+}

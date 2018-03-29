@@ -1,0 +1,8 @@
+.container {
+    max-width: $container-width;
+    margin: 0 $container-gutter;
+
+    @media screen and (min-width: $container-breakpoint) {
+        margin: 0 auto;
+    }
+}

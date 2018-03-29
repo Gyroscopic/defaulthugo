@@ -1,0 +1,47 @@
+.entry {
+    margin-bottom: $m-md;
+
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__heading {
+        font-size: 26px;
+    }
+
+    &--excerpt &__heading {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    &__featured {
+        margin: 0;
+        img {
+            border-radius: 3px;
+        }
+        a {
+            display: block;
+        }
+    }
+
+    &__meta {
+        font-size: 14px;
+        border-top: 2px solid #eee;
+        border-bottom: 2px solid #eee;
+    }
+
+    &--excerpt &__meta {
+        font-size: 13px;
+    }
+
+    &__body {
+        & > img, & > p > img {
+            box-shadow: 0 10px 15px -4px rgba(#000000, .2);
+        }
+    }
+
+    &__footer {
+        margin-top: 20px;
+    }
+}
+

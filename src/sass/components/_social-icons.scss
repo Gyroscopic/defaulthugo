@@ -1,0 +1,49 @@
+.social-icons {
+    padding-left: 0;
+    margin: 0;
+    line-height: 0;
+
+    &__item {
+        list-style: none;
+        display: inline-block;
+
+        & > a {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background-color: red;
+            border-radius: 50%;
+            color: #ffffff;
+            padding: 8px;
+            transition: opacity .3s ease, transform .3s ease, box-shadow .3s ease;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0);
+
+            &:hover, &:focus {
+                opacity: .85;
+                transform: scale(1.075);
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+            }
+        }
+    }
+
+    svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__item--facebook > a {
+        background-color: $brand-facebook;
+    }
+    &__item--instagram > a {
+        background-color: $brand-instagram;
+    }
+    &__item--pinterest > a {
+        background-color: $brand-pinterest;
+    }
+    &__item--twitter > a {
+        background-color: $brand-twitter;
+    }
+    &__item--linkedin > a {
+        background-color: $brand-linkedin;
+    }
+}

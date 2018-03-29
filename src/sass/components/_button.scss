@@ -1,0 +1,42 @@
+@mixin button-context($background, $text) {
+    background-color: $background;
+    color: $text;
+
+    &:hover, &:focus {
+        background-color: darken($background, 10%);
+    }
+}
+
+.button {
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    display: inline-block;
+    box-shadow: none;
+    line-height: 1;
+    cursor: pointer;
+    padding: 12px 20px;
+    text-decoration: none;
+
+    &--xs {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    &--primary {
+        @include button-context($color-1, #fff);
+    }
+    &--facebook {
+        @include button-context(#3B5998, #fff);
+    }
+    &--twitter {
+        @include button-context(#1DA1F2, #fff);
+    }
+    &--google {
+        @include button-context(#DB4437, #fff);
+    }
+    &--linkedin {
+        @include button-context(#007BB5, #fff);
+    }
+}
+

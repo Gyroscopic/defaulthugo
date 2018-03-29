@@ -1,6 +1,7 @@
 baseURL = "/"
 languageCode = "en-gb"
-title = "{TITLE}"
+title = "defaulthugotest"
+buildDrafts = false
 
 enableRobotsTXT = true
 disableAliases = true

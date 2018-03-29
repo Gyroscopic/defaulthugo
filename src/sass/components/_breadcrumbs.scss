@@ -1,0 +1,127 @@
+.breadcrumbs {
+    list-style: none;
+    display: inline-block;
+
+    .icon {
+        font-size: 14px;
+    }
+
+    .crumb {
+        float: left;
+        a {
+            color: #FFF;
+            display: block;
+            background: $brand1;
+            text-decoration: none;
+            position: relative;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 6px 0 3px;
+            text-align: center;
+            margin-right: 12px;
+            font-size: 12px;
+            font-weight:300;
+            //transition: background-color .1s ease 0s,box-shadow .1s ease 50ms,-webkit-box-shadow .1s ease 50ms;
+        }
+        &:nth-child(even) {
+            a {
+                background-color: $brand1-darken;
+
+                &:before {
+                    border-color: $brand1-darken;
+                    border-left-color: transparent;
+                }
+                &:after {
+                    border-left-color: $brand1-darken;
+                }
+            }
+        }
+        &:last-child {
+            a {
+                padding-right: 10px;
+                border-radius: 0 4px 4px 0;
+                &:after {
+                    border: none;
+                }
+            }
+        }
+        &:first-child {
+            a {
+                padding-left: 10px;
+                border-radius: 4px 0 0 4px;
+                &:before {
+                    border: none;
+                }
+            }
+        }
+
+        a {
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                border: 0 solid $brand1;
+                border-width: 10px 4px;
+                width: 0;
+                height: 0;
+            }
+            &:before {
+                left: -8px;
+                border-left-color: transparent;
+            }
+            &:after {
+                left: 100%;
+                border-color: transparent;
+                border-left-color: $brand1;
+            }
+            &:hover {
+                background-color: $brand2;
+                text-shadow: 1px 1px 2px black;
+                padding: 0 5px 0 4px;
+
+                &:before {
+                    border-color: $brand2;
+                    border-left-color: transparent;
+                }
+                &:after {
+                    border-left-color: $brand2;
+                }
+            }
+            
+        }
+
+        &:first-child {
+            a:hover {
+                padding: 0 5px 0 11px;
+            }
+        }
+
+        &.active {
+            a {
+                font-style:italic;
+                color: $brand3;
+                text-shadow: 1px 1px 2px black;
+                cursor: default;
+                padding: 0 6px 0 3px;
+
+                background-color: $brand2-darken;
+
+                &:before {
+                    border-color: $brand2-darken;
+                    border-left-color: transparent;
+                }
+                &:after {
+                    border-left-color: $brand2-darken;
+                }
+            }
+
+
+            &:first-child {
+                a {
+                    padding: 0 10px 0 6px;
+                }
+            }
+        }
+    }
+}

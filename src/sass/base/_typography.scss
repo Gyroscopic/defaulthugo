@@ -1,0 +1,43 @@
+h1, h2, h3, h4, h5, h6, p, ul, ol, hr {
+    margin-top: 0;
+}
+
+h1, h2, h3, h4 {
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 20px;
+}
+h3 {
+    font-size: 18px;
+}
+
+iframe {
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+a {
+    color: $color-1;
+    text-decoration-skip: ink;
+    text-decoration-color: rgba($color-1, .5);
+}
+
+.sr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+::selection {
+    background-color: rgba(#b4549f, .65);
+}
